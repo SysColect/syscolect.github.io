@@ -1,20 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SysColect - Em Breve</title>
+    <title>SysColect - Ferramentas Inteligentes para sua Empresa</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>SysColect</h1>
-            <p>Em breve</p>
-        </header>
-        <footer>
-            <p>Desenvolvido por <a href="https://ramme.dev">ramme.dev</a></p>
-        </footer>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <strong>SysColect</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Console</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="text-white text-center">
+            <h1 class="display-3">Ferramentas Inteligentes para sua Empresa</h1>
+            <p class="lead">Otimize processos, centralize dados e impulsione a produtividade com a plataforma SysColect.</p>
+            <a class="btn btn-outline-light btn-lg mt-3" href="#" role="button">Conheça o Console</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5 mb-5">
+        <!-- Features Section -->
+        <section class="text-center">
+            <h2 class="mb-5">Por que SysColect?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Automação de Processos</h5>
+                    <p class="text-muted">Reduza tarefas manuais e repetitivas, permitindo que sua equipe foque no que realmente importa.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Análise de Dados</h5>
+                    <p class="text-muted">Transforme dados brutos em insights valiosos com dashboards intuitivos e relatórios customizáveis.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h5 class="fw-bold">Segurança Corporativa</h5>
+                    <p class="text-muted">Garanta a integridade e a confidencialidade das suas informações com nossos padrões de segurança.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <!-- Social media -->
+            <section class="mb-4">
+                <p>SysColect - Inovação e tecnologia para o seu negócio.</p>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Copyright:
+            <a class="text-white" href="https://syscolect.com/">syscolect.com</a> | Desenvolvido por <a class="text-white" href="https://ramme.dev/">ramme.dev</a>
+        </div>
+    </footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
 </body>
 </html>
