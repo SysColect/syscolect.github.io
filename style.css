@@ -66,3 +66,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Custom Button Hover */
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* Adiciona um brilho sutil */
+    color: #fff; /* Mantém o texto branco */
+}
