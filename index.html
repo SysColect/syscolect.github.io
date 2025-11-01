@@ -5,90 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>SysColect - Ferramentas Inteligentes para sua Empresa</title>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Design CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-50">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="favicon.svg" alt="SysColect Logo" height="30" class="d-inline-block align-text-top">
-                <strong>SysColect</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/app">App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://console.syscolect.com">Console</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="favicon.svg" alt="SysColect Logo" class="nav-logo">
+                <span class="nav-brand-text">SysColect</span>
             </div>
+            <button class="nav-menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span class="material-icons">menu</span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="https://console.syscolect.com" class="nav-link">Console</a></li>
+                <li><a href="/app" class="nav-link">App</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="text-white text-center">
-            <h1 class="display-3">Ferramentas Inteligentes para sua Empresa</h1>
-            <p class="lead">Otimize processos, centralize dados e impulsione a produtividade com a plataforma SysColect.</p>
-            <a class="btn btn-outline-light btn-lg mt-3" href="https://console.syscolect.com" role="button">Conheça o Console</a>
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
-    </header>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="material-icons">rocket_launch</span>
+                <span>Implantação rápida e eficiente</span>
+            </div>
+            <h1 class="hero-title">Ferramentas Inteligentes para sua Empresa</h1>
+            <p class="hero-subtitle">Soluções integradas para programação, produção, processos industriais e gestão de armazéns. Sistemas que se adaptam às necessidades do seu negócio.</p>
+            <div class="hero-actions">
+                <a href="https://console.syscolect.com" class="btn btn-primary">
+                    <span>Acessar Console</span>
+                    <span class="material-icons">arrow_forward</span>
+                </a>
+                <a href="/app" class="btn btn-secondary">
+                    <span>Ver App</span>
+                    <span class="material-icons">phone_android</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container mt-5 mb-5">
-        <!-- Features Section -->
-        <section class="text-center">
-            <h2 class="mb-5">Por que SysColect?</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Automação de Processos</h5>
-                    <p class="text-muted">Reduza tarefas manuais e repetitivas, permitindo que sua equipe foque no que realmente importa.</p>
+    <!-- Solutions Section -->
+    <section class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Soluções</span>
+                <h2 class="section-title">Sistemas Especializados para o seu Setor</h2>
+                <p class="section-description">Plataforma modular desenvolvida para atender as suas necessidades específicas</p>
+            </div>
+
+            <div class="solutions-grid">
+                <!-- Indústria Card -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <span class="material-icons">precision_manufacturing</span>
+                    </div>
+                    <h3 class="solution-title">Indústria</h3>
+                    <p class="solution-description">Sistemas completos para gestão industrial com foco em programação, produção e processos.</p>
+                    <ul class="solution-features">
+                        <li>
+                            <span class="material-icons">schedule</span>
+                            <span>Programação de Produção</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">factory</span>
+                            <span>Controle de Processos</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">analytics</span>
+                            <span>Gestão de Produção</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Análise de Dados</h5>
-                    <p class="text-muted">Transforme dados brutos em insights valiosos com dashboards intuitivos e relatórios customizáveis.</p>
+
+                <!-- WMS Card -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <span class="material-icons">warehouse</span>
+                    </div>
+                    <h3 class="solution-title">Centros de Distribuição</h3>
+                    <p class="solution-description">Sistema WMS para otimização de armazéns, picking, estoque e distribuição.</p>
+                    <ul class="solution-features">
+                        <li>
+                            <span class="material-icons">inventory_2</span>
+                            <span>Gestão de Estoque</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">move_to_inbox</span>
+                            <span>Picking e Expedição</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">local_shipping</span>
+                            <span>Controle de Distribuição</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <i class="fas fa-tachometer-alt fa-3x text-primary mb-3"></i>
-                    <h5 class="fw-bold">Dados em Tempo Real</h5>
-                    <p class="text-muted">Colete e processe os dados da sua empresa em tempo real, tomando decisões mais rápidas e assertivas.</p>
+
+                <!-- Sistemas Auxiliares Card -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <span class="material-icons">integration_instructions</span>
+                    </div>
+                    <h3 class="solution-title">Sistemas Auxiliares</h3>
+                    <p class="solution-description">Módulos complementares que integram e potencializam suas operações diárias.</p>
+                    <ul class="solution-features">
+                        <li>
+                            <span class="material-icons">dashboard</span>
+                            <span>Dashboards Personalizados</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">settings</span>
+                            <span>Automação de Processos</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">api</span>
+                            <span>Integrações API</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- IA Card -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <span class="material-icons">psychology</span>
+                    </div>
+                    <h3 class="solution-title">Inteligência Artificial</h3>
+                    <p class="solution-description">Sistemas de IA personalizados para otimizar processos, prever demandas e automatizar decisões inteligentes.</p>
+                    <ul class="solution-features">
+                        <li>
+                            <span class="material-icons">auto_awesome</span>
+                            <span>Machine Learning</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">trending_up</span>
+                            <span>Previsões e Análises</span>
+                        </li>
+                        <li>
+                            <span class="material-icons">smart_toy</span>
+                            <span>Automação Inteligente</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Por que escolher</span>
+                <h2 class="section-title">Tecnologia que impulsiona resultados</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">speed</span>
+                    </div>
+                    <h4 class="feature-title">Performance</h4>
+                    <p class="feature-text">Processamento rápido e eficiente, mesmo com grandes volumes de dados e operações complexas.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">sync</span>
+                    </div>
+                    <h4 class="feature-title">Tempo Real</h4>
+                    <p class="feature-text">Monitoramento e atualizações em tempo real de toda sua operação, garantindo informações sempre precisas.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">security</span>
+                    </div>
+                    <h4 class="feature-title">Segurança</h4>
+                    <p class="feature-text">Infraestrutura robusta com proteção de dados e conformidade com as melhores práticas de segurança.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">tune</span>
+                    </div>
+                    <h4 class="feature-title">Personalização</h4>
+                    <p class="feature-text">Sistemas adaptáveis às suas necessidades específicas, com configurações flexíveis e módulos customizáveis.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">insights</span>
+                    </div>
+                    <h4 class="feature-title">Inteligência</h4>
+                    <p class="feature-text">Dashboards e relatórios que transformam dados em insights acionáveis para tomada de decisão.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <span class="material-icons">support_agent</span>
+                    </div>
+                    <h4 class="feature-title">Suporte</h4>
+                    <p class="feature-text">Experiência e conhecimento para ajudar na implementação e otimização contínua dos seus sistemas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para transformar sua operação?</h2>
+                <p class="cta-description">Entre em contato conosco e descubra como nossos sistemas podem otimizar seus processos.</p>
+                <div class="cta-email-wrapper">
+                    <a href="mailto:contato@syscolect.com" class="cta-email-card">
+                        <div class="cta-email-icon">
+                            <span class="material-icons">mail</span>
+                        </div>
+                        <div class="cta-email-content">
+                            <span class="cta-email-label">Entre em contato</span>
+                            <span class="cta-email-address-wrapper">
+                                <span class="cta-email-address">contato@syscolect.com</span>
+                                <button class="cta-email-copy" id="copyEmailBtn" aria-label="Copiar email" type="button">
+                                    <span class="material-icons">content_copy</span>
+                                    <span class="copy-tooltip">Copiar</span>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="cta-email-decoration">
+                            <span class="material-icons">arrow_forward</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-        <div class="container p-4">
-            <!-- Social media -->
-            <section class="mb-4">
-                <p>SysColect - Inovação e tecnologia para o seu negócio.</p>
-            </section>
-        </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2025 Copyright:
-            <a class="text-white" href="https://syscolect.com/">syscolect.com</a> | Desenvolvido por <a class="text-white" href="https://ramme.dev/">ramme.dev</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="favicon.svg" alt="SysColect Logo" class="footer-logo">
+                    <span class="footer-brand-text">SysColect</span>
+                    <p class="footer-tagline">Inovação e tecnologia para o seu negócio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h5>Plataforma</h5>
+                        <ul>
+                            <li><a href="https://console.syscolect.com">Console</a></li>
+                            <li><a href="/app">App</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SysColect. Todos os direitos reservados.</p>
+                <p class="footer-credit">Desenvolvido por <a href="https://ramme.dev" target="_blank" rel="noopener">ramme.dev</a></p>
+            </div>
         </div>
     </footer>
 
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
-    <!-- Custom Scripts -->
+    <!-- Scripts -->
     <script src="scripts.js"></script>
 </body>
 </html>
